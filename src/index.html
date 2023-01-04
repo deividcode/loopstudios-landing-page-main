@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+
+  <!-- SCREEN MENU -->
+  <div id="element-screenMenu" class="screenMenu d-md-none container-fluid px-4 py-4 position-fixed top-0 d-grid align-items-start vh-100 bg-dark">
+
+    <div class="screenMenu__header d-flex justify-content-between align-items-center">
+      <a href="#element-screenMenu">
+        <img src="/public/images/logo.svg" alt="Loopstudios" width="130px">
+      </a>
+      <a href="#">
+        <img src="/public/images/icon-close.svg" alt="close-menu" width="18px" height="18">
+      </a>
+    </div>
+
+    <nav class="screenMenu__menu d-flex flex-column justify-content-start align-items-start gap-3">
+      <a class="text-uppercase hover-underline" href="">About</a>
+      <a class="text-uppercase hover-underline" href="">Careers</a>
+      <a class="text-uppercase hover-underline" href="">Events</a>
+      <a class="text-uppercase hover-underline" href="">Products</a>
+      <a class="text-uppercase hover-underline" href="">Support</a>      
+    </nav>     
+
+  </div>
+
+  <!-- HEROE -->
+  <section class="hero container-fluid w-100 vh-100 p-0">
+    
+    <picture class="hero__backgroundImage">
+      <source srcset="/public/images/mobile/image-hero.jpg" media="(max-width: 749px)">
+      <source srcset="/public/images/desktop/image-hero.jpg" media="(min-width: 750px)">
+      <img 
+        src="/public/images/mobile/image-hero.jpg" 
+        alt="hero" 
+        height="100%"     
+        >
+    </picture>
+
+    <div class="container mx-auto h-100 position-absolute top-50 start-50 translate-middle">
+
+      <header class="header">
+    
+        <div style="height: 95px" class="d-flex justify-content-between align-items-center">
+    
+          <div class="header__logo">
+            <img src="/public/images/logo.svg" alt="Loopstudios">
+          </div>
+          
+          <div class="">
+
+            <a href="#element-screenMenu" class="d-md-none">            
+              <img src="/public/images/icon-hamburger.svg" alt="menu-icon">            
+            </a>
+
+            <nav class="menu d-none d-md-block">
+              <a href="" class="text-white hover-underline me-4">About</a>
+              <a href="" class="text-white hover-underline me-4">Careers</a>
+              <a href="" class="text-white hover-underline me-4">Events</a>
+              <a href="" class="text-white hover-underline me-4">Products</a>
+              <a href="" class="text-white hover-underline">Support</a>      
+            </nav>                
+
+          </div>                                        
+  
+        </div>
+    
+      </header>
+
+      <section class="mt-5 pt-5">
+
+        <h1 class="text-white lh-1 p-3 border border-white">Immersive experiences that deliver</h1>
+
+      </section>
+
+    </div>
+
+  </section>
+
+    <!-- INFO #1 -->
+  <section class="container mx-auto pt-5 mt-4 position-relative">   
+    <div class="row">
+      
+      <div class="col-md-8">
+        <picture class="hero__backgroundImage">
+          <source srcset="/public/images/mobile/image-interactive.jpg" media="(max-width: 749px)">
+          <source srcset="/public/images/desktop/image-interactive.jpg" media="(min-width: 750px)">
+          <img 
+            src="/public/images/mobile/image-interactive.jpg" 
+            alt="reality virtual" 
+            height="100%"     
+            >
+        </picture>
+      </div>
+  
+      <div class="info1__text text-center mt-5 col-4 text-md-start bg-white">
+        <h2>The leader in interactive VR</h2>
+        <p class="mx-3">Founded in 2011, Loopstudios has been producing world-class virtual reality 
+          projects for some of the best companies around the globe. Our award-winning 
+          creations have transformed businesses through digital experiences that bind 
+          to their brand.</p>
+      </div>
+    </div>
+
+  </section>
+  
+    <!-- INFO #2 -->
+  <section class="container mx-auto pt-5 mt-4 mt-md-6 d-flex flex-column align-items-center"> 
+         
+    <div class="w-100 mb-5 text-center d-md-flex justify-content-between align-items-center">
+
+      <h2 class="mb-0">Our creations</h2>
+
+      <a href="#" class="d-none d-md-block btn-bd-primary">see all</a>
+
+    </div>
+
+    <div class="info2__gallery row">
+
+      <figure class="position-relative col-12 col-md-3">
+
+        <picture class="hero__backgroundImage">
+          <source srcset="/public/images/mobile/image-deep-earth.jpg" media="(max-width: 767px)">
+          <source srcset="/public/images/desktop/image-deep-earth.jpg" media="(min-width: 768px)">
+          <img 
+            src="/public/images/mobile/image-deep-earth.jpg" 
+            alt="hero" 
+            height="100%"     
+            >
+        </picture>
+
+        <figcaption class="position-absolute bottom-0 ms-3 mb-2">
+          <h5 class="text-uppercase">deep earth</h5>
+        </figcaption>
+
+      </figure>
+      
+      <figure class="position-relative col-12 col-md-3">
+
+        <picture class="hero__backgroundImage">
+          <source srcset="/public/images/mobile/image-night-arcade.jpg" media="(max-width: 767px)">
+          <source srcset="/public/images/desktop/image-night-arcade.jpg" media="(min-width: 768px)">
+          <img 
+            src="/public/images/mobile/image-night-arcade.jpg" 
+            alt="hero" 
+            height="100%"     
+            >
+        </picture>
+
+        <figcaption class="position-absolute bottom-0 ms-3 mb-2">
+          <h5 class="text-uppercase">Night arcade</h5>
+        </figcaption>
+
+      </figure>
+      
+      <figure class="position-relative col-12 col-md-3">
+
+        <picture class="hero__backgroundImage">
+          <source srcset="/public/images/mobile/image-soccer-team.jpg" media="(max-width: 767px)">
+          <source srcset="/public/images/desktop/image-soccer-team.jpg" media="(min-width: 768px)">
+          <img 
+            src="/public/images/mobile/image-soccer-team.jpg" 
+            alt="hero" 
+            height="100%"     
+            >
+        </picture>
+
+        <figcaption class="position-absolute bottom-0 ms-3 mb-2">
+          <h5 class="text-uppercase">Soccer team VR</h5>
+        </figcaption>
+
+      </figure>
+
+      <figure class="position-relative col-12 col-md-3">
+
+        <picture class="hero__backgroundImage">
+          <source srcset="/public/images/mobile/image-grid.jpg" media="(max-width: 767px)">
+          <source srcset="/public/images/desktop/image-grid.jpg" media="(min-width: 768px)">
+          <img 
+            src="/public/images/mobile/image-grid.jpg" 
+            alt="hero" 
+            height="100%"     
+            >
+        </picture>
+
+        <figcaption class="position-absolute bottom-0 ms-3 mb-2">
+          <h5 class="text-uppercase">The grid</h5>
+        </figcaption>
+
+      </figure>
+
+      <figure class="position-relative col-12 col-md-3">
+
+        <picture class="hero__backgroundImage">
+          <source srcset="/public/images/mobile/image-from-above.jpg" media="(max-width: 767px)">
+          <source srcset="/public/images/desktop/image-from-above.jpg" media="(min-width: 768px)">
+          <img 
+            src="/public/images/mobile/image-from-above.jpg" 
+            alt="hero" 
+            height="100%"     
+            >
+        </picture>
+
+        <figcaption class="position-absolute bottom-0 ms-3 mb-2">
+          <h5 class="text-uppercase">From up above VR</h5>
+        </figcaption>
+
+      </figure>
+
+      <figure class="position-relative col-12 col-md-3">
+
+        <picture class="hero__backgroundImage">
+          <source srcset="/public/images/mobile/image-pocket-borealis.jpg" media="(max-width: 767px)">
+          <source srcset="/public/images/desktop/image-pocket-borealis.jpg" media="(min-width: 768px)">
+          <img 
+            src="/public/images/mobile/image-pocket-borealis.jpg" 
+            alt="hero" 
+            height="100%"     
+            >
+        </picture>
+
+        <figcaption class="position-absolute bottom-0 ms-3 mb-2">
+          <h5 class="text-uppercase">Pocket borealis</h5>
+        </figcaption>
+
+      </figure>
+
+      <figure class="position-relative col-12 col-md-3">
+
+        <picture class="hero__backgroundImage">
+          <source srcset="/public/images/mobile/image-curiosity.jpg" media="(max-width: 767px)">
+          <source srcset="/public/images/desktop/image-curiosity.jpg" media="(min-width: 768px)">
+          <img 
+            src="/public/images/mobile/image-curiosity.jpg" 
+            alt="hero" 
+            height="100%"     
+            >
+        </picture>
+
+        <figcaption class="position-absolute bottom-0 ms-3 mb-2">
+          <h5 class="text-uppercase">The curiosity</h5>
+        </figcaption>
+
+      </figure>
+
+      <figure class="position-relative col-12 col-md-3">
+
+        <picture class="hero__backgroundImage">
+          <source srcset="/public/images/mobile/image-fisheye.jpg" media="(max-width: 767px)">
+          <source srcset="/public/images/desktop/image-fisheye.jpg" media="(min-width: 768px)">
+          <img 
+            src="/public/images/mobile/image-fisheye.jpg" 
+            alt="hero" 
+            height="100%"     
+            >
+        </picture>
+
+        <figcaption class="position-absolute bottom-0 ms-3 mb-2">
+          <h5 class="text-uppercase">Make it fisheye</h5>
+        </figcaption>
+
+      </figure>
+
+    </div>
+    
+    <a href="#" class="d-md-none btn-bd-primary order-2 order-md-0 mt-3">see all</a>
+
+  </section>
+
+  <footer class="footer d-grid container-fluid bg-dark py-5 mt-6 text-white">
+    
+    <div class="row container mx-auto">
+
+      <div class="col-12 col-md-6 px-0">
+
+        <div class="footer__logo text-center text-md-start">
+          <img src="/public/images/logo.svg" alt="Loopstudios">
+        </div>
+        
+        <nav class="footer__menu d-flex flex-column flex-md-row align-items-center mt-5">
+          <a href="" class="footer__menu-links text-white hover-underline mb-3 mb-md-0 me-md-4">About</a>
+          <a href="" class="footer__menu-links text-white hover-underline mb-3 mb-md-0 me-md-4">Careers</a>
+          <a href="" class="footer__menu-links text-white hover-underline mb-3 mb-md-0 me-md-4">Events</a>
+          <a href="" class="footer__menu-links text-white hover-underline mb-3 mb-md-0 me-md-4">Products</a>
+          <a href="" class="footer__menu-links text-white hover-underline mb-3 mb-md-0 me-md-4">Support</a>
+        </nav>
+
+      </div>      
+      
+      <div class="col-12 col-md-6 px-0">
+
+        <div class="footer_socialMedia d-flex justify-content-center justify-content-md-end mt-4 mt-md-0">
+          <a href="#" class="mx-2 hover-underline">
+            <img src="/public/images/icon-facebook.svg" alt="facebook" srcset="">
+          </a>
+          <a href="#" class="mx-2 hover-underline">
+            <img src="/public/images/icon-twitter.svg" alt="twitter" srcset="">
+          </a>
+          <a href="#" class="mx-2 hover-underline">
+            <img src="/public/images/icon-instagram.svg" alt="instagram" srcset="">
+          </a>
+          <a href="#" class="mx-2 hover-underline">
+            <img src="/public/images/icon-pinterest.svg" alt="pinterest" srcset="">
+          </a>
+        </div>
+        
+        <div class="footer__copyright mt-3 mt-md-5 text-center text-md-end">
+  
+          <span style="font-size: 0.8em;" class="text-VD-gray">© 2021 Loopstudios. All rights reserved.</span>
+  
+        </div>
+
+      </div>      
+
+    </div>
+  </footer>
+
+  <!--                     
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->  
+
+  </body>
+</html>
